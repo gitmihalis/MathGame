@@ -32,7 +32,6 @@ p2 = MathGame::Player.new('Marcos')
 
 match = MathGame::Match.new(p1, p2)
 match.begin
-q1 = MathGame::Question.new
-q1.ask(p1)
+
 
 

@@ -11,12 +11,13 @@ module MathGame
 			puts "[->-> Question for #{player.name} <-<-]"
 			puts "What is #{@rand1} #{@operator} #{@rand2} ?"
 			player_answer = gets.chomp.to_i
+
 			if player_answer == ( @rand1.send(@operator, @rand2) )
 				puts "Good job. #{player_answer} is correct!"
 			else 
 				player.lose_life
 				puts "What were you thinking? #{player_answer} is wrong."
-			end
+			end			
 		end
 
 	end
